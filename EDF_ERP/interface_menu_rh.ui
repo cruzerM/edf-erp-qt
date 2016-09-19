@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Interface_menu_RH</class>
+ <widget class="QMainWindow" name="Interface_menu_RH">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>601</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ressources Humaines</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rssources.qrc">
+    <normaloff>:/images/logo_erp.png</normaloff>:/images/logo_erp.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_employe">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>130</y>
+      <width>260</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gestion des données d'employées</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_contrat">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>260</y>
+      <width>260</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gestion des contrats</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_assiduite">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>260</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gestion d'assiduite</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_paie">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>260</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gestion des bulletins de salaire</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="logo_edf">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>231</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/new/prefix1/EdfErp.png);
+image: url(:/images/logo_groupe.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="logo_groupe">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/new/prefix1/logo_groupe.png);
+image: url(:/images/logo_edf_erp.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuQuitter">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionEnvoyer_un_message"/>
+    <addaction name="actionEnvoyer_un_email"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuQuitter"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionEnvoyer_un_email">
+   <property name="icon">
+    <iconset resource="rssources.qrc">
+     <normaloff>:/images/email.png</normaloff>:/images/email.png</iconset>
+   </property>
+   <property name="text">
+    <string>Envoyer un email</string>
+   </property>
+  </action>
+  <action name="actionEnvoyer_un_message">
+   <property name="icon">
+    <iconset resource="rssources.qrc">
+     <normaloff>:/images/inbox.png</normaloff>:/images/inbox.png</iconset>
+   </property>
+   <property name="text">
+    <string>Envoyer un message</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rssources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AffichePret</class>
+ <widget class="QDialog" name="AffichePret">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>212</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ajout/Modif Prêt</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rssources.qrc">
+    <normaloff>:/images/logo_erp.png</normaloff>:/images/logo_erp.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QLabel" name="TextIdPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>46</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Id Prêt</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextBanquePret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>46</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Banque</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextCausePret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>46</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cause</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextInteretPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>46</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Intérêt</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextMntInitPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Montant initial</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextMntFinPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Montant final</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextDDPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Date de début</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextDFPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>270</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Date de fin</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextDureePret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Durée</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TextStatutPret">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Statut</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValIdPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValBanPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValIntPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>150</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValMntFinalPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>210</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValDateDebPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>240</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValDateFinPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>270</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValDureePret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>300</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValStatutPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>330</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValCausePret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValMntInitPret">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EnregistrerPret">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>360</y>
+     <width>75</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+  </widget>
+  <zorder>ValCausePret</zorder>
+  <zorder>ValMntInitPret</zorder>
+  <zorder>ValStatutPret</zorder>
+  <zorder>ValDureePret</zorder>
+  <zorder>ValDateFinPret</zorder>
+  <zorder>ValDateDebPret</zorder>
+  <zorder>ValMntFinalPret</zorder>
+  <zorder>ValIntPret</zorder>
+  <zorder>ValBanPret</zorder>
+  <zorder>ValIdPret</zorder>
+  <zorder>TextIdPret</zorder>
+  <zorder>TextBanquePret</zorder>
+  <zorder>TextCausePret</zorder>
+  <zorder>TextInteretPret</zorder>
+  <zorder>TextMntInitPret</zorder>
+  <zorder>TextMntFinPret</zorder>
+  <zorder>TextDDPret</zorder>
+  <zorder>TextDFPret</zorder>
+  <zorder>TextDureePret</zorder>
+  <zorder>TextStatutPret</zorder>
+  <zorder>EnregistrerPret</zorder>
+ </widget>
+ <resources>
+  <include location="rssources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

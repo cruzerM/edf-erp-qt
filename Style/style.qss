@@ -1,0 +1,106 @@
+
+	QPushButton {
+     border: 1px solid #1a3665;
+     border-radius: 2px;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:default {
+     border-color: rgb(193,90,8); /* make the default button prominent */
+ }
+ 
+QLineEdit#login_text {
+border: 1px solid #ed1c24;
+color : blue;
+}
+QLineEdit#pwd_text {
+border: 1px solid #ed1c24;
+}
+
+.Login { /* class */
+background-color: white;
+}
+
+QLabel#login_label { /* property not class */
+color: red;
+}
+
+QLabel#login_name {
+color : blue;
+}
+
+QMessageBox {
+background-color: white;
+}
+
+QWidget {
+background-color: white;
+}
+
+QDialog {
+background-color: white;
+}
+
+QMainWindow::separator {
+background-color: white;
+}
+
+
+
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 1px solid #C2C7CB;
+	position: absolute;
+    top: -0.5em;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 1px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    min-width: 16ex;
+    padding: 4px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; /* make non-selected tabs look smaller */
+}
+QTabBar::tab:first:selected {
+    margin-left: 0; /* the first selected tab has nothing to overlap with on the left */
+}
+
+QTabBar::tab:last:selected {
+    margin-right: 0; /* the last selected tab has nothing to overlap with on the right */
+}
+
+QTabBar::tab:only-one {
+    margin: 0; /* if there is only one tab, we don't want overlapping margins */
+}

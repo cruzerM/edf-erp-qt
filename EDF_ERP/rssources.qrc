@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>logo_edf.png</file>
+        <file>logo_edf_erp.png</file>
+        <file>logo_erp.png</file>
+        <file>logo_groupe.png</file>
+        <file>Logo_miniature.png</file>
+        <file>ajout.png</file>
+        <file>inbox.png</file>
+        <file>attachment.png</file>
+        <file>email.png</file>
+    </qresource>
+</RCC>
